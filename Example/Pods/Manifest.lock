@@ -1,0 +1,16 @@
+PODS:
+  - HolidayJp (0.1.0)
+
+DEPENDENCIES:
+  - HolidayJp (from `../`)
+
+EXTERNAL SOURCES:
+  HolidayJp:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HolidayJp: c79bbdb336d43bafc1f7f5fa0c3ffe2ded4bcf8c
+
+PODFILE CHECKSUM: 0561e8961772d9308888fc6ed095287e876065ff
+
+COCOAPODS: 1.4.0
