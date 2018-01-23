@@ -1,3 +1,10 @@
+//
+//  Holiday.swift
+//  holiday_jp-swift
+//
+//  Created by Pine Mizune on 2018/01/24.
+//
+
 public struct Holiday {
     public let ymd: String
     public let week: String
