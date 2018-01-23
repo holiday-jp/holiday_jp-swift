@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		135CB5794E96B9A872C5F3136A85F117 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		234BE2CB8509843A8D5631E5C022E991 /* Pods-HolidayJp_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0491E2B3BAAD70593FD008C18FF619B2 /* Pods-HolidayJp_Tests-dummy.m */; };
-		5BB84E8328522EEC7A69F650B77A02FF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9118EFCE6E38D7F9137B3E370F3908 /* ReplaceMe.swift */; };
+		381DC25520178DBE00523374 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381DC25420178DBE00523374 /* Holiday.swift */; };
+		381DC25720178DE200523374 /* HolidayJp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381DC25620178DE200523374 /* HolidayJp.swift */; };
+		381DC25920178DED00523374 /* Holidays.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381DC25820178DED00523374 /* Holidays.generated.swift */; };
 		65A781D0E0A38D38537DA1A10486A49F /* HolidayJp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3C3B76E6335D1549ABE96A8E759DF /* HolidayJp-dummy.m */; };
 		8EB460E3A67D2EB6F98A177D8584F109 /* Pods-HolidayJp_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D386D8D08C0A9D7720D64174FB7718 /* Pods-HolidayJp_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C55FB523EBE560C8F50D83D0AF6FB281 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -28,28 +30,30 @@
 
 /* Begin PBXFileReference section */
 		0491E2B3BAAD70593FD008C18FF619B2 /* Pods-HolidayJp_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HolidayJp_Tests-dummy.m"; sourceTree = "<group>"; };
-		130BCB42C53144ADF6E807D4DBB398F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		140DFE9DE247699D03D852FF047F6CF2 /* Pods-HolidayJp_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HolidayJp_Tests.modulemap"; sourceTree = "<group>"; };
-		1A9118EFCE6E38D7F9137B3E370F3908 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HolidayJp/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		130BCB42C53144ADF6E807D4DBB398F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		140DFE9DE247699D03D852FF047F6CF2 /* Pods-HolidayJp_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HolidayJp_Tests.modulemap"; sourceTree = "<group>"; };
 		1C5352EF3A9E29B92827B6771FE28A3B /* Pods-HolidayJp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HolidayJp_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		25CCF8885055734B4720D0F6E15A6F15 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CC782C1765997111F3A53A7DFAD4C0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33D386D8D08C0A9D7720D64174FB7718 /* Pods-HolidayJp_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HolidayJp_Tests-umbrella.h"; sourceTree = "<group>"; };
 		36E3E0E664AC0AA041F862B2280D2ADE /* Pods-HolidayJp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HolidayJp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3A3DAED41488B8A8D09FB0055A350986 /* Pods_HolidayJp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HolidayJp_Tests.framework; path = "Pods-HolidayJp_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		381DC25420178DBE00523374 /* Holiday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Holiday.swift; path = HolidayJp/Classes/Holiday.swift; sourceTree = "<group>"; };
+		381DC25620178DE200523374 /* HolidayJp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HolidayJp.swift; path = HolidayJp/Classes/HolidayJp.swift; sourceTree = "<group>"; };
+		381DC25820178DED00523374 /* Holidays.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Holidays.generated.swift; path = HolidayJp/Classes/Holidays.generated.swift; sourceTree = "<group>"; };
+		3A3DAED41488B8A8D09FB0055A350986 /* Pods_HolidayJp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HolidayJp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA3C3B76E6335D1549ABE96A8E759DF /* HolidayJp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HolidayJp-dummy.m"; sourceTree = "<group>"; };
-		4867D66AF70036BC2DE948EF22D62F6B /* HolidayJp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HolidayJp.framework; path = HolidayJp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4867D66AF70036BC2DE948EF22D62F6B /* HolidayJp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HolidayJp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		68D6B9DA4AD60975F70EC69B4A75841F /* Pods-HolidayJp_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HolidayJp_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7F35EB087EE7A6561F45627D1D575D9D /* Pods-HolidayJp_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HolidayJp_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8357F97E1F7F78B848FEA3CE59229024 /* Pods-HolidayJp_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HolidayJp_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93D509CF026F93068019B4CFCB7E5F56 /* Pods-HolidayJp_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HolidayJp_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		AD3F7C5A7D50DE0E21E0F6DFC5D3F240 /* HolidayJp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HolidayJp.xcconfig; sourceTree = "<group>"; };
-		B1DB95018F0D762751E059F2BB5C072A /* HolidayJp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = HolidayJp.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B8E8C0049DDC4EEDF81F01249D614057 /* HolidayJp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HolidayJp.modulemap; sourceTree = "<group>"; };
+		B1DB95018F0D762751E059F2BB5C072A /* HolidayJp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HolidayJp.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B8E8C0049DDC4EEDF81F01249D614057 /* HolidayJp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HolidayJp.modulemap; sourceTree = "<group>"; };
 		C1924BB5BB27CDC61611067AA08B9A40 /* HolidayJp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HolidayJp-prefix.pch"; sourceTree = "<group>"; };
-		C37B83E775AD09D5D10C08C2114DCC46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C37B83E775AD09D5D10C08C2114DCC46 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C3D913321A95D153822A8BBD279304AC /* HolidayJp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HolidayJp-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +123,9 @@
 		A11F619C11788A1AB269864356FDA22A /* HolidayJp */ = {
 			isa = PBXGroup;
 			children = (
-				1A9118EFCE6E38D7F9137B3E370F3908 /* ReplaceMe.swift */,
+				381DC25820178DED00523374 /* Holidays.generated.swift */,
+				381DC25620178DE200523374 /* HolidayJp.swift */,
+				381DC25420178DBE00523374 /* Holiday.swift */,
 				8F226AB3CB7E3583376801184B46BA4E /* Pod */,
 				3BDD6E1C7AF7246F2FD508382E4EA3AB /* Support Files */,
 			);
@@ -243,6 +249,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					991B62875DD9573C52FCA3DD43B03E41 = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -267,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381DC25520178DBE00523374 /* Holiday.swift in Sources */,
+				381DC25920178DED00523374 /* Holidays.generated.swift in Sources */,
+				381DC25720178DE200523374 /* HolidayJp.swift in Sources */,
 				65A781D0E0A38D38537DA1A10486A49F /* HolidayJp-dummy.m in Sources */,
-				5BB84E8328522EEC7A69F650B77A02FF /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AD3F7C5A7D50DE0E21E0F6DFC5D3F240 /* HolidayJp.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -476,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AD3F7C5A7D50DE0E21E0F6DFC5D3F240 /* HolidayJp.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
