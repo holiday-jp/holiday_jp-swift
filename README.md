@@ -1,6 +1,6 @@
-# HolidayJp
+# holiday_jp Swift
 
-[![CI Status](http://img.shields.io/travis/Pine Mizune/HolidayJp.svg?style=flat)](https://travis-ci.org/Pine Mizune/HolidayJp)
+[![CI Status](http://img.shields.io/travis/pine/HolidayJp.svg?style=flat)](https://travis-ci.org/pine/HolidayJp)
 [![Version](https://img.shields.io/cocoapods/v/HolidayJp.svg?style=flat)](http://cocoapods.org/pods/HolidayJp)
 [![License](https://img.shields.io/cocoapods/l/HolidayJp.svg?style=flat)](http://cocoapods.org/pods/HolidayJp)
 [![Platform](https://img.shields.io/cocoapods/p/HolidayJp.svg?style=flat)](http://cocoapods.org/pods/HolidayJp)
