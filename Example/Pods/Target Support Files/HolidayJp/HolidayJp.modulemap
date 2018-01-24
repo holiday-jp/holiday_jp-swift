@@ -1,6 +1,0 @@
-framework module HolidayJp {
-  umbrella header "HolidayJp-umbrella.h"
-
-  export *
-  module * { export * }
-}

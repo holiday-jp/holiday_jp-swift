@@ -5,6 +5,8 @@
 //  Created by Pine Mizune on 2018/01/24.
 //
 
+import Foundation
+
 public struct Holiday {
     public let ymd: String
     public let week: String

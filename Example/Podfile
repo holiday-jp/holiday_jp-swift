@@ -1,6 +1,0 @@
-use_frameworks!
-target 'HolidayJp_Tests' do
-  pod 'HolidayJp', :path => '../'
-  
-  
-end

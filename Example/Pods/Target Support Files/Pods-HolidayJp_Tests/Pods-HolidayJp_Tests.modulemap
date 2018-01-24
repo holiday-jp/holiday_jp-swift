@@ -1,6 +1,0 @@
-framework module Pods_HolidayJp_Tests {
-  umbrella header "Pods-HolidayJp_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
