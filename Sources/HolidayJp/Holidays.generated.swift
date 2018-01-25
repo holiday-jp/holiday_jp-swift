@@ -9,7 +9,7 @@ import Foundation
 
 let Holidays: [String: Holiday] = {
     var holidays: [String: Holiday] = [:]
-
+    
     holidays["1970-01-01"] = Holiday(ymd: "1970-01-01",week: "木",weekEn: "Thursday",name: "元日",nameEn: "New Year's Day")
     holidays["1970-01-15"] = Holiday(ymd: "1970-01-15",week: "木",weekEn: "Thursday",name: "成人の日",nameEn: "Coming of Age Day")
     holidays["1970-02-11"] = Holiday(ymd: "1970-02-11",week: "水",weekEn: "Wednesday",name: "建国記念の日",nameEn: "National Foundation Day")
@@ -1334,6 +1334,6 @@ let Holidays: [String: Holiday] = {
     holidays["2050-11-03"] = Holiday(ymd: "2050-11-03",week: "木",weekEn: "Thursday",name: "文化の日",nameEn: "National Culture Day")
     holidays["2050-11-23"] = Holiday(ymd: "2050-11-23",week: "水",weekEn: "Wednesday",name: "勤労感謝の日",nameEn: "Labor Thanksgiving Day")
     holidays["2050-12-23"] = Holiday(ymd: "2050-12-23",week: "金",weekEn: "Friday",name: "天皇誕生日",nameEn: "Emperor's Birthday")
-
+    
     return holidays
 }()
