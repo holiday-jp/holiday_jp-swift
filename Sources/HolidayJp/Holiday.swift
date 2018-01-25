@@ -14,9 +14,6 @@ public struct Holiday {
     public let name: String
     public let nameEn: String
     
-    public lazy var date: Date =
-        HolidayJp.sharedFormatter.date(from: self.ymd)!
-    
     init(
         ymd: String,
         week: String,
@@ -29,5 +26,21 @@ public struct Holiday {
         self.weekEn = weekEn
         self.name = name
         self.nameEn = nameEn
+    }
+    
+    public lazy var date: Date = HolidayJp.formatter.date(from: self.ymd)!
+    
+    func date(calendar: Calendar) -> Date {
+        let yearStartIndex = self.ymd.index(self.ymd.startIndex, offsetBy: 4)
+        let monthStartIndex = self.ymd.index(self.ymd.startIndex, offsetBy: 5)
+        let monthEndIndex = self.ymd.index(monthStartIndex, offsetBy: 2)
+        let dayStartIndex = self.ymd.index(self.ymd.startIndex, offsetBy: 8)
+        let dayEndIndex = self.ymd.index(dayStartIndex, offsetBy: 2)
+        
+        let year = Int(self.ymd[..<yearStartIndex])!
+        let month = Int(self.ymd[monthStartIndex..<monthEndIndex])!
+        let day = Int(self.ymd[dayStartIndex..<dayEndIndex])!
+        
+        return calendar.date(from: DateComponents(year: year, month: month, day: day))!
     }
 }
