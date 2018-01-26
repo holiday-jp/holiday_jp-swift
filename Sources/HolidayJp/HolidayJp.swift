@@ -19,10 +19,14 @@ public class HolidayJp {
         return formatter
     }()
     
-    public static func between(_ start: Date, and end: Date) -> [Holiday] {
+    public static func between(
+        _ start: Date,
+        and end: Date,
+        calendar: Calendar = HolidayJp.calendar
+    ) -> [Holiday] {
         let startComponents = calendar.dateComponents([.year, .month, .day], from: start)
         let endComponents = calendar.dateComponents([.year, .month, .day], from: end)
-        let startYmd = String(format: "%04d-%02d-%02", startComponents.year!, startComponents.month!, startComponents.day!)
+        let startYmd = String(format: "%04d-%02d-%02d", startComponents.year!, startComponents.month!, startComponents.day!)
         let endYmd = String(format: "%04d-%02d-%02d", endComponents.year!, endComponents.month!, endComponents.day!)
         
         return Holidays
