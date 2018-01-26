@@ -1,4 +1,4 @@
-# holiday_jp Swift
+# holiday_jp Swift &nbsp;[![Build Status](https://travis-ci.org/pine/holiday_jp-swift.svg?branch=master)](https://travis-ci.org/pine/holiday_jp-swift)
 
 :crossed_flags: Japanese holiday for Swift
 
