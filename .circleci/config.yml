@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/workspace
+    docker:
+      - image: swift:4
+    steps:
+      - checkout
+      - run:
+          name: System information
+          command: |
+            swift --version
+      - run:
+          name: Test
+          command: |
+            swift test
