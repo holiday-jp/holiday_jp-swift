@@ -1,3 +1,6 @@
-# HolidayJp
+# holiday_jp Swift
 
-A description of this package.
+:crossed_flags: Japanese holiday for Swift
+
+## License
+MIT &copy; Pine Mizune
