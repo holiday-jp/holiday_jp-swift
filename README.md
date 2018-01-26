@@ -2,8 +2,11 @@
 
 :crossed_flags: Japanese holiday for Swift
 
+## Getting started
+TODO
 
-https://github.com/holiday-jp/holiday_jp
+## API
+TODO
 
 ## See also
 - https://github.com/holiday-jp/holiday_jp
