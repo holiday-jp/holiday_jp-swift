@@ -11,13 +11,6 @@ public class HolidayJp {
     private init() { }
     
     public static let calendar: Calendar = Calendar(identifier: .iso8601)
-    public static let formatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.calendar = HolidayJp.calendar
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.dateFormat = "yyyy-MM-dd"
-        return formatter
-    }()
     
     public static func between(
         _ start: Date,

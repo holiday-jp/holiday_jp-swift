@@ -1,4 +1,13 @@
+//
+//  HolidayJpTests.swift
+//  holiday_jp-swift
+//
+//  Created by Pine Mizune on 2018/01/30.
+//
+
+import Foundation
 import XCTest
+
 @testable import HolidayJp
 
 class HolidayJpTests: XCTestCase {

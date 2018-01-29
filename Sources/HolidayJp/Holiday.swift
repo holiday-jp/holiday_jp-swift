@@ -28,9 +28,7 @@ public struct Holiday {
         self.nameEn = nameEn
     }
     
-    public lazy var date: Date = HolidayJp.formatter.date(from: self.ymd)!
-    
-    func date(calendar: Calendar) -> Date {
+    func date(calendar: Calendar = HolidayJp.calendar) -> Date {
         let yearStartIndex = self.ymd.index(self.ymd.startIndex, offsetBy: 4)
         let monthStartIndex = self.ymd.index(self.ymd.startIndex, offsetBy: 5)
         let monthEndIndex = self.ymd.index(monthStartIndex, offsetBy: 2)
