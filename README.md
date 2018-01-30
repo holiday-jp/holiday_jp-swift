@@ -5,7 +5,7 @@
 ## Getting started
 ### CocoaPods
 
-```
+```ruby
 pod 'HolidayJp', '~> 0.1'
 ```
 
@@ -17,7 +17,7 @@ github 'pine/holiday_jp-swift' ~> 0.1
 
 ### Swift Package Manager
 
-```
+```swift
 .Package(url: "https://github.com/pine/holiday_jp-swift.git", majorVersion: 0, minor: 1),
 ```
 
