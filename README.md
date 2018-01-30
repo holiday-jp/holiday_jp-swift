@@ -3,7 +3,23 @@
 :crossed_flags: Japanese holiday for Swift
 
 ## Getting started
-TODO
+### CocoaPods
+
+```
+pod 'HolidayJp', '~> 0.1'
+```
+
+### Carthage
+
+```
+github 'pine/holiday_jp-swift' ~> 0.1
+```
+
+### Swift Package Manager
+
+```
+.Package(url: "https://github.com/pine/holiday_jp-swift.git", majorVersion: 0, minor: 1),
+```
 
 ## API
 TODO
