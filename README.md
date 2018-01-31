@@ -2,7 +2,7 @@
 
 :crossed_flags: Japanese holiday for Swift
 
-## Getting started
+## Installing
 ### CocoaPods
 
 ```ruby
@@ -20,6 +20,9 @@ github 'pine/holiday_jp-swift' ~> 0.1
 ```swift
 .Package(url: "https://github.com/pine/holiday_jp-swift.git", majorVersion: 0, minor: 1),
 ```
+
+## Example
+TODO
 
 ## API
 TODO
