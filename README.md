@@ -23,7 +23,7 @@ github 'pine/holiday_jp-swift' ~> 0.1
 
 ## Example
 
-```
+```swift
 import Foundation
 import HolidayJp
 
