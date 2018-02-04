@@ -49,7 +49,7 @@ Return all holidays in period.
 ### `struct Holiday`
 `Holiday` struct represents holiday data.
 
-```
+```swift
 let calendar = Calendar(identifier: .iso8601)
 let date = calendar.date(from: DateComponents(year: 2014, month: 9, day: 23, hour: 0, minute: 0, second: 1))!
 let holiday = HolidayJp.between(date, and: date)
