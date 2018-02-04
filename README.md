@@ -38,14 +38,29 @@ if HolidayJp.isHoliday(today) {
 #### `HolidayJp.isHoliday(_: Date) -> Bool`
 #### `HolidayJp.isHoliday(_: Date, calendar: Calendar) -> Bool`
 #### `HolidayJp.isHoliday(year: Int, month: Int: day: Int) -> Bool`
-TODO
+
+Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
 
 #### `HolidayJp.between(_: Date, and: Date) -> [Holiday]`
 #### `HolidayJp.between(_: Date, and: Date, calendar: Calendar) -> [Holiday]`
-TODO
+
+Return all holidays in period.
 
 ### `struct Holiday`
-TODO
+`Holiday` struct represents holiday data.
+
+```
+let calendar = Calendar(identifier: .iso8601)
+let date = calendar.date(from: DateComponents(year: 2014, month: 9, day: 23, hour: 0, minute: 0, second: 1))!
+let holiday = HolidayJp.between(date, and: date)
+
+print(holiday.ymd)    // "2015-09-23"
+print(holiday.week)   // "火"
+print(holiday.weekEn) // "Tuesday"
+print(holiday.name)   // "秋分の日"
+print(holiday.nameEn) // "Autumnal Equinox Day"
+print(holiday.date()) // Date(2015-09-23 15:00:00 +0000)
+```
 
 ## See also
 - https://github.com/holiday-jp/holiday_jp
