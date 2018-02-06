@@ -2,6 +2,10 @@
 
 :crossed_flags: Japanese holiday for Swift
 
+## Requirements
+
+- Swift 4
+
 ## Installing
 ### CocoaPods
 
