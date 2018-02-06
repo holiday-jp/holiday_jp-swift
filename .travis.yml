@@ -2,4 +2,12 @@ osx_image: xcode9.2
 language: objective-c
 
 script:
+  # Test generate script
+  - ./scripts/generate.rb
+  - ./scripts/check-git-dirty.sh
+
+  # Lint podspec
+  - pod lib lint HolidayJp.podspec
+
+  # Run tests
   - swift test
