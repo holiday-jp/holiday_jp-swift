@@ -6,9 +6,9 @@ require 'yaml'
 
 holidays_detailed = YAML.load_file('./holiday_jp/holidays_detailed.yml')
 holidays = holidays_detailed.values.sort_by {|v| v['date'] }
-outputPath = File.join('./Sources/HolidayJp/Holidays.generated.swift')
+output_path = File.join('./Sources/HolidayJp/Holidays.generated.swift')
 
-File.open(outputPath, 'w') do |io|
+File.open(output_path, 'w') do |io|
   io.write "//\n"
   io.write "//  Holidays.generated.swift\n"
   io.write "//  holiday_jp-swift\n"
