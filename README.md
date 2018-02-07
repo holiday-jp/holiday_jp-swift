@@ -32,7 +32,7 @@ import HolidayJp
 
 let today = Date()
 if HolidayJp.isHoliday(today) {
-  print("Today is a holiday!")
+    print("Today is a holiday!")
 }
 ```
 
@@ -45,7 +45,7 @@ Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
 ```swift
 let today = Date()
 if HolidayJp.isHoliday(today) {
-  print("Today is a holiday!")
+    print("Today is a holiday!")
 }
 ```
 
@@ -59,7 +59,7 @@ let calendar = Calendar(identifier: .iso8601)
 let today = Date()
 
 if HolidayJp.isHoliday(today, calendar: calendar) {
-  print("Today is a holiday!")
+    print("Today is a holiday!")
 }
 ```
 
@@ -69,7 +69,7 @@ Judge whether it is a holiday in Japan. If a date is holiday, return `true`.
 
 ```swift
 if HolidayJp.isHoliday(year: 2018, month: 12, day: 1) {
-  print("2018/12/01 is a holiday!")
+    print("2018/12/01 is a holiday!")
 }
 ```
 
