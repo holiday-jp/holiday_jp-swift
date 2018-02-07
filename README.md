@@ -16,13 +16,13 @@ pod 'HolidayJp', '~> 0.1'
 ### Carthage
 
 ```
-github 'pine/holiday_jp-swift' ~> 0.1
+github 'holiday-jp/holiday_jp-swift' ~> 0.1
 ```
 
 ### Swift Package Manager
 
 ```swift
-.Package(url: "https://github.com/pine/holiday_jp-swift.git", majorVersion: 0, minor: 1),
+.Package(url: "https://github.com/holiday-jp/holiday_jp-swift.git", majorVersion: 0, minor: 1),
 ```
 
 ## Example
