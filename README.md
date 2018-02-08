@@ -129,6 +129,28 @@ print(holiday.nameEn) // "Autumnal Equinox Day"
 print(holiday.date()) // Date(2015-09-23 15:00:00 +0000)
 ```
 
+## For developer
+### Development
+Please create Xcode project with Swift Package Manager, and open it.
+
+```
+$ swift package generate-xcodeproj
+$ open HolidayJp.xcodeproj
+```
+
+### Test
+
+```
+$ swift test
+```
+
+### Publish to CocoaPods
+
+```
+$ pod lib lint
+$ pod trunk push HolidayJp.podspec
+```
+
 ## See also
 - https://github.com/holiday-jp/holiday_jp
 
