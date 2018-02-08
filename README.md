@@ -148,7 +148,7 @@ $ swift test
 
 ```
 $ pod lib lint
-$ pod trunk push HolidayJp.podspec
+$ pod trunk push
 ```
 
 ## See also
