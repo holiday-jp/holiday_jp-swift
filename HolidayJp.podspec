@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HolidayJp'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Japanese holiday for Swift'
   s.homepage         = 'https://github.com/holiday-jp/holiday_jp-swift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
