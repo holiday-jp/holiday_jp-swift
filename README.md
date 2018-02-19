@@ -138,6 +138,12 @@ $ swift package generate-xcodeproj
 $ open HolidayJp.xcodeproj
 ```
 
+And also, please run ruby script to re-generate holidays definitions.
+
+```
+$ ./scripts/generate.rb
+```
+
 ### Test
 
 ```
