@@ -39,7 +39,11 @@ class HolidayJpTests: XCTestCase {
         // should be Mountain Day from 2016
         XCTAssertFalse(HolidayJp.isHoliday(year: 2015, month: 8, day: 11))
         for i in 2016..<2051 {
-            XCTAssertTrue(HolidayJp.isHoliday(year: i, month: 8, day: 11))
+            if i == 2020 { // Tokyo Olympic
+                XCTAssertTrue(HolidayJp.isHoliday(year: i, month: 8, day: 10))
+            } else {
+                XCTAssertTrue(HolidayJp.isHoliday(year: i, month: 8, day: 11))
+            }
         }
     }
 
@@ -59,7 +63,12 @@ class HolidayJpTests: XCTestCase {
         XCTAssertFalse(HolidayJp.isHoliday(date3))
         XCTAssertFalse(HolidayJp.isHoliday(date3, calendar: calendar))
         for i in 2016..<2051 {
-            let date4 = calendar.date(from: DateComponents(year: i, month: 8, day: 11))!
+            let date4: Date
+            if i == 2020 { // Tokyo Olympic
+                date4 = calendar.date(from: DateComponents(year: i, month: 8, day: 10))!
+            } else {
+                date4 = calendar.date(from: DateComponents(year: i, month: 8, day: 11))!
+            }
             XCTAssertTrue(HolidayJp.isHoliday(date4))
             XCTAssertTrue(HolidayJp.isHoliday(date4, calendar: calendar))
         }
