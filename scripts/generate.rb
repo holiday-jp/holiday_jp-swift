@@ -18,21 +18,23 @@ File.open(output_path, 'w') do |io|
   io.write "\n"
   io.write "import Foundation\n"
   io.write "\n"
-  io.write "let Holidays: [String: Holiday] = {\n"
+  io.write "fileprivate func newHolidays() -> [String: Holiday] {\n"
   io.write "    var holidays: [String: Holiday] = [:]\n"
   io.write "    \n"
 
   holidays.each do |holiday|
     io.write %Q|    holidays["#{holiday['date']}"] = Holiday(|
-    io.write %Q|ymd: "#{holiday['date']}",|
-    io.write %Q|week: "#{holiday['week']}",|
-    io.write %Q|weekEn: "#{holiday['week_en']}",|
-    io.write %Q|name: "#{holiday['name']}",|
+    io.write %Q|ymd: "#{holiday['date']}", |
+    io.write %Q|week: "#{holiday['week']}", |
+    io.write %Q|weekEn: "#{holiday['week_en']}", |
+    io.write %Q|name: "#{holiday['name']}", |
     io.write %Q|nameEn: "#{holiday['name_en']}"|
     io.write %Q|)\n|
   end
 
   io.write "    \n"
   io.write "    return holidays\n"
-  io.write "}()\n"
+  io.write "}\n"
+  io.write "\n"
+  io.write "let Holidays: [String: Holiday] = newHolidays()\n"
 end
