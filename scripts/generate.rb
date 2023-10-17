@@ -4,7 +4,11 @@
 
 require 'yaml'
 
-holidays_detailed = YAML.load_file('./holiday_jp/holidays_detailed.yml')
+if YAML.respond_to?(:unsafe_load_file)
+  holidays_detailed = YAML.unsafe_load_file('./holiday_jp/holidays_detailed.yml')
+else
+  holidays_detailed = YAML.load_file('./holiday_jp/holidays_detailed.yml')
+end
 holidays = holidays_detailed.values.sort_by {|v| v['date'] }
 output_path = File.join('./Sources/HolidayJp/Holidays.generated.swift')
 
