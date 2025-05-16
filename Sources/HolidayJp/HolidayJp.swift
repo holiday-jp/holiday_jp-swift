@@ -12,6 +12,8 @@ public class HolidayJp {
     
     public static let calendar: Calendar = Calendar(identifier: .iso8601)
     
+    public static let Holidays: [String: Holiday] = HolidayYAMLLoader.loadHolidays(bundle: Bundle.module)
+    
     public static func between(
         _ start: Date,
         and end: Date,
