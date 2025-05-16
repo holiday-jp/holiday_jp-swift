@@ -1,5 +1,9 @@
 # holiday_jp Swift
 
+**This repository is a fork.**
+
+Forked from: https://github.com/holiday-jp/holiday_jp-swift
+
 [![Build Status](https://travis-ci.org/holiday-jp/holiday_jp-swift.svg?branch=master)](https://travis-ci.org/holiday-jp/holiday_jp-swift)
 [![CircleCI](https://circleci.com/gh/holiday-jp/holiday_jp-swift/tree/master.svg?style=shield)](https://circleci.com/gh/holiday-jp/holiday_jp-swift/tree/master)
 ![CocoaPods Compatible](https://img.shields.io/cocoapods/v/HolidayJp.svg)
@@ -22,13 +26,13 @@ pod 'HolidayJp', '~> 0.1'
 ### Carthage
 
 ```
-github 'holiday-jp/holiday_jp-swift' ~> 0.1
+github 'sugijotaro/holiday_jp-swift' ~> 0.1
 ```
 
 ### Swift Package Manager
 
 ```swift
-.Package(url: "https://github.com/holiday-jp/holiday_jp-swift.git", majorVersion: 0, minor: 1),
+.package(url: "https://github.com/sugijotaro/holiday_jp-swift.git", from: "0.1.0"),
 ```
 
 ## Example
@@ -138,11 +142,14 @@ $ swift package generate-xcodeproj
 $ open HolidayJp.xcodeproj
 ```
 
-And also, please run ruby script to re-generate holidays definitions.
+#### Syncing holidays_detailed.yml
+This repository uses a YAML file for holiday data, which is managed as a submodule. To update the resource file used by SwiftPM, run:
 
 ```
-$ ./scripts/generate.rb
+$ ./scripts/sync-holidays-yaml.sh
 ```
+
+This will copy the latest `holidays_detailed.yml` from the submodule to `Sources/HolidayJp/holidays_detailed.yml`.
 
 ### Test
 
