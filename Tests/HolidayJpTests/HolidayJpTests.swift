@@ -41,6 +41,8 @@ class HolidayJpTests: XCTestCase {
         for i in 2016..<2051 {
             if i == 2020 { // Tokyo Olympic
                 XCTAssertTrue(HolidayJp.isHoliday(year: i, month: 8, day: 10))
+            } else if i == 2021 { // Tokyo Olympic
+                XCTAssertTrue(HolidayJp.isHoliday(year: i, month: 8, day: 8))
             } else {
                 XCTAssertTrue(HolidayJp.isHoliday(year: i, month: 8, day: 11))
             }
@@ -66,6 +68,8 @@ class HolidayJpTests: XCTestCase {
             let date4: Date
             if i == 2020 { // Tokyo Olympic
                 date4 = calendar.date(from: DateComponents(year: i, month: 8, day: 10))!
+            } else if i == 2021 { // Tokyo Olympic
+                date4 = calendar.date(from: DateComponents(year: i, month: 8, day: 8))!
             } else {
                 date4 = calendar.date(from: DateComponents(year: i, month: 8, day: 11))!
             }
