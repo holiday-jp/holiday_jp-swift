@@ -15,7 +15,7 @@ cd ..
 git add holiday_jp
 git commit -m "Update holiday_jp submodule to latest release ($latest_tag)" || echo "No changes to commit"
 
-./scripts/sync-holidays-yaml.sh
+./scripts/sync-holidays-json.sh
 
-git add Sources/HolidayJp/holidays_detailed.yml
-git commit -m "Update holidays_detailed.yml after syncing with holiday_jp" || echo "No changes to commit" 
+git add Sources/HolidayJp/holidays_detailed.json
+git commit -m "Update holidays_detailed.json after syncing with holiday_jp" || echo "No changes to commit"

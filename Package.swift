@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "HolidayJp",
             resources: [
-                .process("holidays_detailed.yml")]
+                .process("holidays_detailed.json")]
         ),
         .testTarget(
             name: "HolidayJpTests",
