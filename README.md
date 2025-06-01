@@ -147,6 +147,8 @@ $ ./scripts/sync-holidays-json.sh
 
 This script converts the latest `holidays_detailed.yml` from the submodule to `Sources/HolidayJp/holidays_detailed.json`.
 
+It uses [yq](https://github.com/mikefarah/yq) to perform the YAML to JSON conversion.
+
 #### Automatically update submodule and sync holidays_detailed.json
 To automatically update the `holiday_jp` submodule to the latest release (the most recently published tag), and then sync and commit the updated `holidays_detailed.json`, use the following script:
 
