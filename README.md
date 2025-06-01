@@ -138,17 +138,17 @@ $ swift package generate-xcodeproj
 $ open HolidayJp.xcodeproj
 ```
 
-#### Syncing holidays_detailed.yml
-This repository uses a YAML file for holiday data, which is managed as a submodule. To update the resource file used by SwiftPM, run:
+#### Syncing holidays_detailed.json
+This repository uses a YAML file for holiday data, which is managed as a submodule. To update the JSON resource file used by SwiftPM, run:
 
 ```
-$ ./scripts/sync-holidays-yaml.sh
+$ ./scripts/sync-holidays-json.sh
 ```
 
-This script copies the latest `holidays_detailed.yml` from the submodule to `Sources/HolidayJp/holidays_detailed.yml`.
+This script converts the latest `holidays_detailed.yml` from the submodule to `Sources/HolidayJp/holidays_detailed.json`.
 
-#### Automatically update submodule and sync holidays_detailed.yml
-To automatically update the `holiday_jp` submodule to the latest release (the most recently published tag), and then sync and commit the updated `holidays_detailed.yml`, use the following script:
+#### Automatically update submodule and sync holidays_detailed.json
+To automatically update the `holiday_jp` submodule to the latest release (the most recently published tag), and then sync and commit the updated `holidays_detailed.json`, use the following script:
 
 ```
 $ ./scripts/update-holiday-jp-and-sync.sh
@@ -157,8 +157,8 @@ $ ./scripts/update-holiday-jp-and-sync.sh
 This script will:
 - Update the `holiday_jp` submodule to the latest release tag (by release date)
 - Commit the submodule update if there are changes
-- Run `sync-holidays-yaml.sh` to update `holidays_detailed.yml`
-- Commit the updated `holidays_detailed.yml` if there are changes
+- Run `sync-holidays-json.sh` to update `holidays_detailed.json`
+- Commit the updated `holidays_detailed.json` if there are changes
 
 ### Test
 
