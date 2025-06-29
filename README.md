@@ -138,11 +138,29 @@ $ swift package generate-xcodeproj
 $ open HolidayJp.xcodeproj
 ```
 
-And also, please run ruby script to re-generate holidays definitions.
+#### Syncing holidays_detailed.json
+This repository uses a YAML file for holiday data, which is managed as a submodule. To update the JSON resource file used by SwiftPM, run:
 
 ```
-$ ./scripts/generate.rb
+$ ./scripts/sync-holidays-json.sh
 ```
+
+This script converts the latest `holidays_detailed.yml` from the submodule to `Sources/HolidayJp/holidays_detailed.json`.
+
+It uses [yq](https://github.com/mikefarah/yq) to perform the YAML to JSON conversion.
+
+#### Automatically update submodule and sync holidays_detailed.json
+To automatically update the `holiday_jp` submodule to the latest release (the most recently published tag), and then sync and commit the updated `holidays_detailed.json`, use the following script:
+
+```
+$ ./scripts/update-holiday-jp-and-sync.sh
+```
+
+This script will:
+- Update the `holiday_jp` submodule to the latest release tag (by release date)
+- Commit the submodule update if there are changes
+- Run `sync-holidays-json.sh` to update `holidays_detailed.json`
+- Commit the updated `holidays_detailed.json` if there are changes
 
 ### Test
 
@@ -162,3 +180,7 @@ $ pod trunk push
 
 ## License
 MIT &copy; Pine Mizune
+
+## Contributors
+- Pine Mizune
+- [Jotaro Sugiyama](https://github.com/sugijotaro)

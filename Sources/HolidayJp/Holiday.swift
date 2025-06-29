@@ -7,12 +7,20 @@
 
 import Foundation
 
-public struct Holiday {
+public struct Holiday: Codable {
     public let ymd: String
     public let week: String
     public let weekEn: String
     public let name: String
     public let nameEn: String
+    
+    enum CodingKeys: String, CodingKey {
+        case ymd = "date"
+        case week
+        case weekEn = "week_en"
+        case name
+        case nameEn = "name_en"
+    }
     
     init(
         ymd: String,
