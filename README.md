@@ -2,30 +2,16 @@
 
 [![Build Status](https://travis-ci.org/holiday-jp/holiday_jp-swift.svg?branch=master)](https://travis-ci.org/holiday-jp/holiday_jp-swift)
 [![CircleCI](https://circleci.com/gh/holiday-jp/holiday_jp-swift/tree/master.svg?style=shield)](https://circleci.com/gh/holiday-jp/holiday_jp-swift/tree/master)
-![CocoaPods Compatible](https://img.shields.io/cocoapods/v/HolidayJp.svg)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=shield)](https://github.com/Carthage/Carthage)
 ![Platform](https://img.shields.io/cocoapods/p/HolidayJp.svg?style=shield)
 
 :crossed_flags: Japanese holiday for Swift
 
 ## Requirements
 
-- Swift 4
+- Swift 5 or 6
 
 ## Installing
-### CocoaPods
-
-```ruby
-pod 'HolidayJp', '~> 0.1'
-```
-
-### Carthage
-
-```
-github 'holiday-jp/holiday_jp-swift' ~> 0.1
-```
-
-### Swift Package Manager
+Use this library with Swift Package Manager as follows:
 
 ```swift
 .Package(url: "https://github.com/holiday-jp/holiday_jp-swift.git", majorVersion: 0, minor: 1),
@@ -165,14 +151,7 @@ This script will:
 ### Test
 
 ```
-$ swift test
-```
-
-### Publish to CocoaPods
-
-```
-$ pod lib lint
-$ pod trunk push
+$ swift test -v
 ```
 
 ## See also
