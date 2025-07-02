@@ -12,7 +12,7 @@ public class HolidayJp {
     
     public static let calendar: Calendar = Calendar(identifier: .iso8601)
     
-    public static let holidays: [String: Holiday] = HolidayJSONLoader.loadHolidays(bundle: Bundle.module)
+    private static let holidays: [String: Holiday] = HolidayJSONLoader.loadHolidays(bundle: Bundle.module)
     
     public static func between(
         _ start: Date,
