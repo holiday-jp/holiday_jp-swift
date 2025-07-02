@@ -12,7 +12,7 @@ public class HolidayJp {
     
     public static let calendar: Calendar = Calendar(identifier: .iso8601)
     
-    public static let Holidays: [String: Holiday] = HolidayJSONLoader.loadHolidays(bundle: Bundle.module)
+    public static let holidays: [String: Holiday] = HolidayJSONLoader.loadHolidays(bundle: Bundle.module)
     
     public static func between(
         _ start: Date,
@@ -24,7 +24,7 @@ public class HolidayJp {
         let startYmd = String(format: "%04d-%02d-%02d", startComponents.year!, startComponents.month!, startComponents.day!)
         let endYmd = String(format: "%04d-%02d-%02d", endComponents.year!, endComponents.month!, endComponents.day!)
         
-        return Holidays
+        return holidays
             .filter { ymd, _ in startYmd <= ymd && ymd <= endYmd }
             .values
             .sorted(by: { $0.ymd < $1.ymd })
@@ -33,11 +33,11 @@ public class HolidayJp {
     public static func isHoliday(_ date: Date, calendar: Calendar = HolidayJp.calendar) -> Bool {
         let components = calendar.dateComponents([.year, .month, .day], from: date)
         let ymd = String(format: "%04d-%02d-%02d", components.year!, components.month!, components.day!)
-        return Holidays[ymd] != nil
+        return holidays[ymd] != nil
     }
     
     public static func isHoliday(year: Int, month: Int, day: Int) -> Bool {
         let ymd = String(format: "%04d-%02d-%02d", year, month, day)
-        return Holidays[ymd] != nil
+        return holidays[ymd] != nil
     }
 }
