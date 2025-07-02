@@ -1,7 +1,6 @@
 # holiday_jp Swift
 
-[![Build Status](https://travis-ci.org/holiday-jp/holiday_jp-swift.svg?branch=master)](https://travis-ci.org/holiday-jp/holiday_jp-swift)
-[![CircleCI](https://circleci.com/gh/holiday-jp/holiday_jp-swift/tree/master.svg?style=shield)](https://circleci.com/gh/holiday-jp/holiday_jp-swift/tree/master)
+[![Test](https://github.com/holiday-jp/holiday_jp-swift/actions/workflows/test.yml/badge.svg)](https://github.com/holiday-jp/holiday_jp-swift/actions/workflows/test.yml)
 ![Platform](https://img.shields.io/cocoapods/p/HolidayJp.svg?style=shield)
 
 :crossed_flags: Japanese holiday for Swift
