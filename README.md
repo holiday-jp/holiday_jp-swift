@@ -114,14 +114,6 @@ print(holiday.date()) // Date(2015-09-23 15:00:00 +0000)
 ```
 
 ## For developer
-### Development
-Please create Xcode project with Swift Package Manager, and open it.
-
-```
-$ swift package generate-xcodeproj
-$ open HolidayJp.xcodeproj
-```
-
 #### Syncing holidays_detailed.json
 This repository uses a YAML file for holiday data, which is managed as a submodule. To update the JSON resource file used by SwiftPM, run:
 
