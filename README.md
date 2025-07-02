@@ -12,7 +12,7 @@
 Use this library with Swift Package Manager as follows:
 
 ```swift
-.Package(url: "https://github.com/holiday-jp/holiday_jp-swift.git", majorVersion: 0, minor: 1),
+.Package(url: "https://github.com/holiday-jp/holiday_jp-swift.git", majorVersion: 1, minor: 0),
 ```
 
 ## Example
